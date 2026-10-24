@@ -16,7 +16,7 @@ Os sprites não são meus: são do criador **moonrain479**, do projeto
 ## Como usar
 
 1. Baixe os sprites do projeto DesktopCow (link acima).
-2. Coloque os arquivos `.gif` na mesma pasta do `pet.py`.
+2. Coloque os arquivos `.gif` na mesma pasta do `pet.py` baixado.
 3. Rode:
 
    ```bash
