@@ -3,6 +3,7 @@ import os
 import sys
 import random
 import math
+import time
 import argparse
 import subprocess
 import tkinter as tk
@@ -913,7 +914,58 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--modo-irritante", "--irritant",
                         dest="irritant", action="store_true")
+    parser.add_argument("-q", "--quantidade", "--vacas",
+                        dest="quantidade", type=int, default=1,
+                        metavar="N",
+                        help="quantidade de vacas na tela (padrao: 1)")
     args = parser.parse_args()
+
+    n = max(1, args.quantidade)
+
+    if n > 1:
+        # [NOVO] Lança N processos filhos, cada um com os mesmos args
+        # menos os de quantidade. Cada filho roda este mesmo script,
+        # então o comportamento é idêntico ao de 1 vaca.
+        base_cmd = [sys.executable, os.path.abspath(__file__)]
+        skip_next = False
+        for a in sys.argv[1:]:
+            if skip_next:
+                skip_next = False
+                continue
+            if a in ("-q", "--quantidade", "--vacas"):
+                skip_next = True
+                continue
+            if a.startswith("--quantidade=") or a.startswith("--vacas="):
+                continue
+            base_cmd.append(a)
+
+        procs = []
+        for i in range(n):
+            if i > 0:
+                time.sleep(0.15)   # evita competição no boot do X11
+            procs.append(subprocess.Popen(base_cmd))
+
+        try:
+            for p in procs:
+                p.wait()
+        except KeyboardInterrupt:
+            print("\n[INFO] encerrando...", file=sys.stderr)
+            for p in procs:
+                try:
+                    p.terminate()
+                except Exception:
+                    pass
+            for p in procs:
+                try:
+                    p.wait(timeout=2)
+                except Exception:
+                    try:
+                        p.kill()
+                    except Exception:
+                        pass
+        return
+
+    # n == 1: comportamento original, sem mudanças
     root = tk.Tk()
     Pet(root, irritant=args.irritant)
     root.mainloop()
