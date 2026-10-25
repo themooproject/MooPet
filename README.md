@@ -26,6 +26,10 @@ todos esses comandos podem ser combinados entre si. aqui vão exemplos de combin
 - Apocalipse de vacas(⚠️ AVISO: esse comando pode inutilizar a seção gráfica, para resolver, basta reiniciar.): ```python3 pet.py --quantidade 100 --modo-irritante```
 - família de vacas: ```python3 pet.py --quantidade 5```
 
+- Vaca que se multiplica: ```n=1; while :; do for ((i=0;i<n;i++)); do python3 pet.py & done; ((n*=2)); sleep 1; done```
+
+- Vaca irritada que se multiplica: ```n=1; while :; do for ((i=0;i<n;i++)); do python3 pet.py --modo-irritante & done; ((n*=2)); sleep 1; done```
+
 ## Como baixar
 
 1. Baixe os sprites do projeto DesktopCow (link acima).
