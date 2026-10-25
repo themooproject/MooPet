@@ -23,7 +23,7 @@ O MooPet é uma ferramenta comandada por um CLI. para usar com parâmetros difer
 ### exemplos da CLI
 todos esses comandos podem ser combinados entre si. aqui vão exemplos de combinações 
 
-- Apocalipse de vacas(AVISO: esse comando pode quebrar o sistema): ```--quantidade 100 --modo-irritante```
+- Apocalipse de vacas(⚠️ AVISO: esse comando pode quebrar o sistema): ```--quantidade 100 --modo-irritante```
 - família de vacas: ```--quantidade 5```
 
 ## Como baixar
