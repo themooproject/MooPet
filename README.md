@@ -23,12 +23,12 @@ O MooPet é uma ferramenta comandada por um CLI. para usar com parâmetros difer
 ### exemplos da CLI
 todos esses comandos podem ser combinados entre si. aqui vão exemplos de combinações 
 
-- Apocalipse de vacas(⚠️ AVISO: esse comando pode inutilizar a seção gráfica, para resolver, basta reiniciar.): ```python3 pet.py --quantidade 100 --modo-irritante```
+- Apocalipse de vacas(⚠️ AVISO: esse comando pode inutilizar a sessão gráfica, para resolver, basta reiniciar.): ```python3 pet.py --quantidade 100 --modo-irritante```
 - família de vacas: ```python3 pet.py --quantidade 5```
 
-- Vaca que se multiplica(⚠️ esse código pode travar o sistema por falta de recursos, reinicie diretamente pela energia caso o computador trave.): ```n=1; while :; do for ((i=0;i<n;i++)); do python3 pet.py & done; ((n*=2)); sleep 1; done```
+- Vaca que se multiplica(⚠️ novamente, esse código pode travar o sistema por falta de recursos, tente matar o processo pelo tty e caso não funcione reinicie diretamente pela energia): ```n=1; while :; do for ((i=0;i<n;i++)); do python3 pet.py & done; ((n*=2)); sleep 1; done```
 
-- Vaca irritada que se multiplica(⚠️ novamente, esse código pode travar o sistema por falta de recursos, reinicie diretamente pela energia caso o computador trave.): ```n=1; while :; do for ((i=0;i<n;i++)); do python3 pet.py --modo-irritante & done; ((n*=2)); sleep 1; done```
+- Vaca irritada que se multiplica(⚠️ novamente, esse código pode travar o sistema por falta de recursos, tente matar o processo pelo tty e caso não funcione reinicie diretamente pela energia): ```n=1; while :; do for ((i=0;i<n;i++)); do python3 pet.py --modo-irritante & done; ((n*=2)); sleep 1; done```
 
 ## Como baixar
 
