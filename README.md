@@ -28,7 +28,7 @@ todos esses comandos podem ser combinados entre si. aqui vão exemplos de combin
 
 - Vaca que se multiplica(⚠️ esse código pode travar o sistema por falta de recursos, reinicie diretamente pela energia caso o computador trave.): ```n=1; while :; do for ((i=0;i<n;i++)); do python3 pet.py & done; ((n*=2)); sleep 1; done```
 
-- Vaca irritada que se multiplica⚠️ novamente, esse código pode travar o sistema por falta de recursos, reinicie diretamente pela energia caso o computador trave.): ```n=1; while :; do for ((i=0;i<n;i++)); do python3 pet.py --modo-irritante & done; ((n*=2)); sleep 1; done```
+- Vaca irritada que se multiplica(⚠️ novamente, esse código pode travar o sistema por falta de recursos, reinicie diretamente pela energia caso o computador trave.): ```n=1; while :; do for ((i=0;i<n;i++)); do python3 pet.py --modo-irritante & done; ((n*=2)); sleep 1; done```
 
 ## Como baixar
 
