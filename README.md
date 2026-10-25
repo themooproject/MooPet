@@ -15,7 +15,7 @@ Os sprites não são meus: são do criador **moonrain479**, do projeto
 
 ## Como usar
 
-O MooPet é uma ferramenta comandada por um CLI. para usar com parâmetros diferentes você pode seguir a lista de parâmetros 
+O MooPet é uma ferramenta comandada por um CLI. para usar com parâmetros diferentes você pode seguir a lista de parâmetros utilizáveis:
 
 - ```--modo-irritante```: é uma configuração que adiciona features irritantes pra vaca
 - ```--quantidade```: diz quantas vacas ele deve criar
