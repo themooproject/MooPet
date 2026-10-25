@@ -24,9 +24,10 @@ O MooPet é uma ferramenta comandada por um CLI. para usar com parâmetros difer
 todos esses comandos podem ser combinados entre si. aqui vão exemplos de combinações 
 
 - Apocalipse de vacas(⚠️ AVISO: esse comando pode inutilizar a sessão gráfica, para resolver, basta matar o processo python em outro tty ou reiniciar.): ```python3 pet.py --quantidade 100 --modo-irritante```
-- família de vacas: ```python3 pet.py --quantidade 5```
-- família de vacas irritadas: ```python3 pet.py --quantidade 5 --modo-irritante```
-- família de vacas com apenas uma vaca irritada: ```python3 pet.py --quantidade 4 & python3 pet.py --modo-irritante```
+- reunião de vacas(para criticar as regras rígidas dos sistemas wayland, elas não conseguem se mover.): ```python3 pet.py --quantidade 10```
+- família de vacas(por que uma vaca sozinha fica entediada rápido): ```python3 pet.py --quantidade 5```
+- família de vacas irritadas( uma família que não presta): ```python3 pet.py --quantidade 5 --modo-irritante```
+- família de vacas com apenas uma vaca irritada(família perfeita com irmão casula chato): ```python3 pet.py --quantidade 4 & python3 pet.py --modo-irritante```
 - Vaca que se multiplica(esse código pode travar o sistema por falta de recursos, tente matar o processo pelo tty e caso não funcione reinicie diretamente pela energia): ```n=1; while :; do for ((i=0;i<n;i++)); do python3 pet.py & done; ((n*=2)); sleep 1; done```
 
 - Vaca irritada que se multiplica(⚠️ novamente, esse código pode travar o sistema por falta de recursos, tente matar o processo pelo tty e caso não funcione reinicie diretamente pela energia): ```n=1; while :; do for ((i=0;i<n;i++)); do python3 pet.py --modo-irritante & done; ((n*=2)); sleep 1; done```
