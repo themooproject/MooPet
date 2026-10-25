@@ -23,7 +23,7 @@ O MooPet é uma ferramenta comandada por um CLI. para usar com parâmetros difer
 ### exemplos da CLI
 todos esses comandos podem ser combinados entre si. aqui vão exemplos de combinações 
 
-- Apocalipse de vacas(⚠️ AVISO: esse comando pode inutilizar a sessão gráfica, para resolver, basta reiniciar.): ```python3 pet.py --quantidade 100 --modo-irritante```
+- Apocalipse de vacas(⚠️ AVISO: esse comando pode inutilizar a sessão gráfica, para resolver, basta matar o processo python em outro tty ou reiniciar.): ```python3 pet.py --quantidade 100 --modo-irritante```
 - família de vacas: ```python3 pet.py --quantidade 5```
 
 - Vaca que se multiplica(esse código pode travar o sistema por falta de recursos, tente matar o processo pelo tty e caso não funcione reinicie diretamente pela energia): ```n=1; while :; do for ((i=0;i<n;i++)); do python3 pet.py & done; ((n*=2)); sleep 1; done```
